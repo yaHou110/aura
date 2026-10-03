@@ -1,0 +1,6 @@
+{
+  "name": "Aura Social - شبکه اجتماعی آئورا",
+  "description": "پلتفرم شبکه اجتماعی مدرن آئورا (Aura) با طراحی پیشرو، انیمیشن‌های نرم، حالت شبیه‌ساز گوشی و پشتیبانی کامل راست‌به‌چپ (RTL) - توسعه داده شده توسط گروه نرم‌افزاری هیمورا",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

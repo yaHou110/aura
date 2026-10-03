@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-vazir: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-vazir), var(--font-jakarta), sans-serif;
+  background-color: #0b0f19;
+  color: #131b2e;
+  overscroll-behavior-y: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbars for slick mobile carousel feel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth custom glass and animations */
+.glass-nav {
+  background: rgba(250, 248, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Phone Mockup Frame Accents */
+.phone-shadow {
+  box-shadow: 
+    0 0 0 12px #1e2230,
+    0 0 0 13px rgba(255, 255, 255, 0.15),
+    0 30px 80px -15px rgba(0, 0, 0, 0.7),
+    0 15px 35px -5px rgba(53, 37, 205, 0.25);
+}
+
+.phone-screen {
+  mask-image: radial-gradient(white, black);
+}
+
+/* RTL line height balance */
+[dir="rtl"] {
+  line-height: 1.65;
+}
+
+/* Custom bounce / pulse keyframes */
+@keyframes heartBurst {
+  0% { transform: scale(0.6); opacity: 0; }
+  50% { transform: scale(1.25); opacity: 1; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+.animate-heart-burst {
+  animation: heartBurst 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
